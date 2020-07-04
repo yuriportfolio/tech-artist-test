@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{3A4989C5-1F55-AD9D-1CA3-A49D39860887}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/healthbar/Player.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PowerUp.cs" Line="26" Column="42" />
+      <File FileName="Assets/healthbar/Player.cs" Line="15" Column="6" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="59" Column="6" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="58dd1a2b-1410-41cf-bbf4-23088d0b9c07" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

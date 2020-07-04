@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     Camera cam;                                                                                 //Declare a camera called cam
     PlayerMotor motor;                                                                          //Declare a playerMotor called motor
     Animator anim;                                                                              //Declare an Animtor called anim
-    Rigidbody rb;
+    Rigidbody rb;                                                                               //Decalre a rigidbody called rb
 
     // Use this for initialization
     void Start()
@@ -16,10 +16,10 @@ public class PlayerController : MonoBehaviour
         cam = Camera.main;                                                                      //Assing the main camera to the variable cam
         motor = GetComponent<PlayerMotor>();                                                    //Get a playerMotor and assign it to motor
         anim = GetComponent<Animator>();                                                        //Get animator component and asign to the variable anim
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();                                                         //assign a rb to a rigidbody component of the player
     }
 
-    void Update()//Is called once per frame.  Asks if the mouse has been clicked
+    void Update()
     {
         //Move the player
         if (Input.GetMouseButtonDown(0))                                                        //If the left mouse button is clicked...
@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour
                 motor.MoveToPoint(hit.point);                                                   //Call the method MoveToPoint in playerMotor
             }
         }
-        if (transform.hasChanged)
+        //moovement animation of the player  
+        if (transform.hasChanged)                                                               //if the transform of the player changes than play walk animation
         {
             anim.SetBool("isWalking", true);
             transform.hasChanged = false;
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+    //secondary animation of the player
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PowerUp"))

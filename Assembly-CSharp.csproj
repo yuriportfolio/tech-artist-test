@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{552B0211-7F9A-3066-2927-AF84E783B084}</ProjectGuid>
+    <ProjectGuid>{3A4989C5-1F55-AD9D-1CA3-A49D39860887}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -63,82 +63,85 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Environment\Materials\water graph\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\PowerUp.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\PowerUp.cs" />
+    <Compile Include="Assets\Scripts\healthbar\Billboard.cs" />
+    <Compile Include="Assets\Scripts\healthbar\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\healthbar\Player.cs" />
+    <None Include="Assets\Environment\Materials\water simple\Water.shader" />
     <None Include="Assets\Environment\Particles\Shaders\PriorityParticleAddSoft.shader" />
     <None Include="Assets\Environment\Particles\Shaders\PriorityParticleAdd.shader" />
     <None Include="Assets\Environment\Particles\Shaders\PriorityParticleAlpha.shader" />
     <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/yuribondarenko/Downloads/PickUpObjectTutorialCode-master/RPGProject3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/yuribondarenko/Documents/GitHub/tech-artist-test/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/2019.3.8f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
