@@ -26,10 +26,17 @@ public class Player : MonoBehaviour
 
 		healthBar.SetHealth(currentHealth);
 	}
+    void UpHealth(int lifepoint)
+    {
+        currentHealth += lifepoint;
+
+        healthBar.SetHealth(currentHealth);
+    }
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PowerUp"))
         {
+            UpHealth(20);
         }
         if (other.CompareTag("Damage"))
         {

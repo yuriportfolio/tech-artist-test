@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: db4a1236b2ea9d34aab34e949d1bc0fc
+timeCreated: 1541134624
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Wowi Typeface
+  fontNames:
+  - Wowi Typeface
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

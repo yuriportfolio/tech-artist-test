@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f1fb3fa0f2710594395def06d7b7b030
+timeCreated: 1541136554
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Friendly Schoolmates
+  fontNames:
+  - Friendly Schoolmates
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
