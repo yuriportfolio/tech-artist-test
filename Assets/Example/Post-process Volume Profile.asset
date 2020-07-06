@@ -187,7 +187,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.982199, z: 0.9654859, w: 0.18278752}
+    m_Value: {x: 1, y: 0.982199, z: 0.9654859, w: 0.15391707}
   midtones:
     m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: -0.083777614}
@@ -258,7 +258,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.116
+    m_Value: 0.142
     min: 0
     max: 1
   smoothness:

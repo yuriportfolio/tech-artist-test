@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
 
 	public int maxHealth = 100;
 	public int currentHealth;
+    public int score = 0;
+    public Text TextScore;
+
 
 	public HealthBar healthBar;
 
@@ -19,7 +23,11 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     
-
+    void ISCORE()
+    {
+        score+=1;
+        TextScore.text = score.ToString(); 
+    }
 	void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
@@ -37,6 +45,8 @@ public class Player : MonoBehaviour
         if (other.CompareTag("PowerUp"))
         {
             UpHealth(20);
+            ISCORE();
+            
         }
         if (other.CompareTag("Damage"))
         {
